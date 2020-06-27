@@ -1,5 +1,5 @@
 import React from "react";
 
 export const Home = () => {
-  return <div>home</div>;
+  return <h1>TOAN LIKER GRATIS MAT</h1>;
 };
