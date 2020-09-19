@@ -44,6 +44,12 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Deploy to production
+
 - yarn build
 - firebase login
 - firebase deploy
+
+## Useful resources
+
+- isomorphic-unfetch
+- i18next

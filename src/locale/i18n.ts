@@ -22,3 +22,5 @@ export default i18n
       escapeValue: false, // not needed for react as it escapes by default
     },
   });
+
+export const getLanguage = () => i18n.language || window.localStorage.i18nLng;

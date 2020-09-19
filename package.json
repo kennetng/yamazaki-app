@@ -18,15 +18,17 @@
     "firebase": "^7.15.3",
     "history": "^5.0.0",
     "i18next": "^19.5.1",
+    "isomorphic-unfetch": "^3.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-i18next": "^11.7.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.4.1",
+    "swr": "^0.2.3",
     "typescript": "^3.9.5"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test"
   },
