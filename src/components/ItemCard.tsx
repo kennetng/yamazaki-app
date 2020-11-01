@@ -1,12 +1,11 @@
 import React, { FC } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Chip } from '@material-ui/core';
 
 import { getLanguage } from "../locale/i18n";
 import { Item } from '../api/menyApi';
@@ -15,8 +14,14 @@ const useStyles = makeStyles({
     root: {
         maxWidth: 345,
     },
+    title: {
+        height: 100,
+    },
+    content: {
+        height: 150,
+    },
     media: {
-        height: 140,
+        height: 200,
     },
 });
 
@@ -30,28 +35,28 @@ export const ItemCard: FC<ItemCardProps> = ({ item }) => {
 
     return (
         <Card className={classes.root}>
-            <CardActionArea>
-                <CardMedia
-                    className={classes.media}
-                    image={item.picture}
-                    title="food"
-                />
-                <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        {item.title[language]}
-                    </Typography>
-                    <Typography variant="body2" color="textSecondary" component="p">
-                        {item.description[language]}
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
+            <CardMedia
+                className={classes.media}
+                image={item.picture}
+                title="food"
+            />
+            <CardContent
+                className={classes.title}
+            >
+                <Typography gutterBottom variant="h5" component="h2">
+                    {item.title[language]}
+                </Typography>
+            </CardContent>
+            <CardContent
+                className={classes.content}
+            >
+                <Typography variant="body2" color="textSecondary" component="p">
+                    {item.description[language]}
+                </Typography>
+            </CardContent>
             <CardActions>
-                <Button size="small" color="primary">
-                    {item.price.out}
-                </Button>
-                <Button size="small" color="primary">
-                    {item.price.in}
-                </Button>
+                <Chip label={`${item.price.out},-`} />
+                <Chip label={`${item.price.in},-`} />
             </CardActions>
         </Card>
     );
