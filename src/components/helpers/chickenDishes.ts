@@ -18,7 +18,7 @@ export const chickenDishes: Item[] = [
       out: 129,
     },
     allergens: [],
-    picture: imrs,
+    picture: "images/menu/Nr43.jpg",
   },
   {
     orderNumber: 44,
@@ -69,7 +69,7 @@ export const chickenDishes: Item[] = [
       out: 149,
     },
     allergens: ["p", "fs", "hv"],
-    picture: imrs,
+    picture: "images/menu/Nr46.jpg",
   },
   {
     orderNumber: 47,
@@ -86,7 +86,7 @@ export const chickenDishes: Item[] = [
       out: 139,
     },
     allergens: ["s", "hv"],
-    picture: imrs,
+    picture: "images/menu/Nr47.jpg",
   },
   {
     orderNumber: 48,
@@ -154,6 +154,6 @@ export const chickenDishes: Item[] = [
       out: 139,
     },
     allergens: [],
-    picture: imrs,
+    picture: "images/menu/Nr51.jpg",
   },
 ];

@@ -88,7 +88,7 @@ export const seafoodDishes: Item[] = [
       out: 179,
     },
     allergens: ["hv", "s"],
-    picture: imrs,
+    picture: "images/menu/Nr56.jpg",
   },
   {
     orderNumber: 57,
@@ -173,7 +173,7 @@ export const seafoodDishes: Item[] = [
       out: 149,
     },
     allergens: [],
-    picture: imrs,
+    picture: "images/menu/Nr63.jpg",
   },
   {
     orderNumber: 64,
@@ -190,7 +190,7 @@ export const seafoodDishes: Item[] = [
       out: 149,
     },
     allergens: [],
-    picture: imrs,
+    picture: "images/menu/Nr64.jpg",
   },
   {
     orderNumber: 65,

@@ -86,7 +86,7 @@ export const beefDishes: Item[] = [
       out: 149,
     },
     allergens: [],
-    picture: imrs,
+    picture: "images/menu/Nr41.jpg",
   },
   {
     orderNumber: 42,
@@ -103,6 +103,6 @@ export const beefDishes: Item[] = [
       out: 149,
     },
     allergens: ["hv", "fs"],
-    picture: imrs,
+    picture: "images/menu/Nr42.jpg",
   },
 ];

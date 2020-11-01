@@ -17,9 +17,10 @@ interface ItemListProps {
     title: string;
     subTitle?: string;
     items: Item[];
+    hideOrderNumber?: boolean;
 }
 
-export const ItemList: FC<ItemListProps> = ({ title, subTitle, items }) => {
+export const ItemList: FC<ItemListProps> = ({ title, subTitle, items, hideOrderNumber }) => {
     const classes = useStyles();
     const isNarrowWidth = useMediaQuery('(max-width:1000px)')
 
@@ -44,7 +45,7 @@ export const ItemList: FC<ItemListProps> = ({ title, subTitle, items }) => {
                     items.map(
                         (item: Item) =>
                             <Grid item xs={isNarrowWidth ? 6 : 3} >
-                                <ItemCard item={item} />
+                                <ItemCard item={item} hideOrderNumber={hideOrderNumber}/>
                             </Grid>
                     )
                 }

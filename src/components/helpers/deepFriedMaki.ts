@@ -18,7 +18,7 @@ export const deepFriedMaki: Item[] = [
       out: 89,
     },
     allergens: ["sk", "hv", "se"],
-    picture: imrs,
+    picture: "images/menu/Nr31.jpg",
   },
   {
     orderNumber: 32,
@@ -35,7 +35,7 @@ export const deepFriedMaki: Item[] = [
       out: 89,
     },
     allergens: ["hv", "f", "g"],
-    picture: imrs,
+    picture: "images/menu/Nr32.jpg",
   },
   {
     orderNumber: 33,

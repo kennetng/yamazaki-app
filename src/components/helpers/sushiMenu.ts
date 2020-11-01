@@ -37,7 +37,7 @@ export const sushiMenu: Item[] = [
       out: 129,
     },
     allergens: ["f", "sk", "se"],
-    picture: imrs,
+    picture: "images/menu/Meny2.jpeg",
   },
   {
     orderNumber: 103,
@@ -73,7 +73,7 @@ export const sushiMenu: Item[] = [
       out: 219,
     },
     allergens: ["f", "b", "hv", "se", "g"],
-    picture: imrs,
+    picture: "images/menu/Meny4.jpeg",
   },
   {
     orderNumber: 105,
@@ -91,7 +91,7 @@ export const sushiMenu: Item[] = [
       out: 229,
     },
     allergens: ["f", "b", "g", "hv", "se"],
-    picture: imrs,
+    picture: "images/menu/Meny5.jpg",
   },
   {
     orderNumber: 106,
@@ -109,7 +109,7 @@ export const sushiMenu: Item[] = [
       out: 349,
     },
     allergens: ["f", "b", "sk", "hv", "se", "g"],
-    picture: imrs,
+    picture: "images/menu/Meny6.jpeg",
   },
   {
     orderNumber: 107,
@@ -127,6 +127,6 @@ export const sushiMenu: Item[] = [
       out: 635,
     },
     allergens: ["sk", "f", "b", "hv", "g", "se"],
-    picture: imrs,
+    picture: "images/menu/PartyMix.jpg",
   },
 ];

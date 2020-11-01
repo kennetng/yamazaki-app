@@ -19,7 +19,7 @@ export const sashimiMenu: Item[] = [
       out: 155,
     },
     allergens: ["f", "sk"],
-    picture: imrs,
+    picture: "images/menu/Litensashimi.jpg",
   },
   {
     orderNumber: 109,

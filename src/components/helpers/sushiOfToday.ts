@@ -1,7 +1,5 @@
 import { Item } from "../../api/menyApi";
 
-import imrs from "../../imrs.jpg";
-
 export const sushiOfToday: Item[] = [
   {
     orderNumber: 8,
@@ -18,7 +16,7 @@ export const sushiOfToday: Item[] = [
       out: 119,
     },
     allergens: ["f", "b", "se", "s"],
-    picture: imrs,
+    picture: "/images/menu/Dagens8.jpeg",
   },
   {
     orderNumber: 9,
@@ -36,7 +34,7 @@ export const sushiOfToday: Item[] = [
       out: 129,
     },
     allergens: ["f", "b", "se", "s"],
-    picture: imrs,
+    picture: "images/menu/Dagens9.jpeg",
   },
   {
     orderNumber: 10,
@@ -54,6 +52,6 @@ export const sushiOfToday: Item[] = [
       out: 129,
     },
     allergens: ["f", "hv", "se"],
-    picture: imrs,
+    picture: "images/menu/Dagens10.jpeg",
   },
 ];

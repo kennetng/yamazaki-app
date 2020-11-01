@@ -26,10 +26,11 @@ const useStyles = makeStyles({
 });
 
 type ItemCardProps = {
-    item: Item
+    item: Item;
+    hideOrderNumber?: boolean;
 }
 
-export const ItemCard: FC<ItemCardProps> = ({ item }) => {
+export const ItemCard: FC<ItemCardProps> = ({ item, hideOrderNumber }) => {
     const classes = useStyles();
     const language = getLanguage();
 
@@ -43,9 +44,15 @@ export const ItemCard: FC<ItemCardProps> = ({ item }) => {
             <CardContent
                 className={classes.title}
             >
-                <Typography gutterBottom variant="h5" component="h2">
-                    {item.title[language]}
-                </Typography>
+                {
+                    hideOrderNumber ?
+                        <Typography gutterBottom variant="h6" component="h2">
+                            {`${item.title[language]}`}
+                        </Typography>
+                        : <Typography gutterBottom variant="h6" component="h2">
+                            {`${item.orderNumber}. ${item.title[language]}`}
+                        </Typography>
+                }
             </CardContent>
             <CardContent
                 className={classes.content}

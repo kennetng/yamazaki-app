@@ -35,7 +35,7 @@ export const maki: Item[] = [
       out: 65,
     },
     allergens: ["f", "se"],
-    picture: imrs,
+    picture: "images/menu/Nr12.jpg",
   },
   {
     orderNumber: 13,
@@ -86,7 +86,7 @@ export const maki: Item[] = [
       out: 85,
     },
     allergens: ["f", "se"],
-    picture: imrs,
+    picture: "images/menu/Nr15.jpg",
   },
   {
     orderNumber: 16,
@@ -206,7 +206,7 @@ export const maki: Item[] = [
       out: 119,
     },
     allergens: ["sk", "f", "se"],
-    picture: imrs,
+    picture: "images/menu/Nr22.jpg",
   },
   {
     orderNumber: 23,
@@ -259,6 +259,6 @@ export const maki: Item[] = [
       out: 145,
     },
     allergens: ["hv", "f", "b", "g", "sk", "se"],
-    picture: imrs,
+    picture: "images/menu/Nr25.jpg",
   },
 ];

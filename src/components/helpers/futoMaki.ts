@@ -86,6 +86,6 @@ export const futoMaki: Item[] = [
       out: 159,
     },
     allergens: ["hv", "sk", "f", "se"],
-    picture: imrs,
+    picture: "images/menu/Nr30.jpg",
   },
 ];

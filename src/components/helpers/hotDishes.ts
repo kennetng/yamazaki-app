@@ -35,7 +35,7 @@ export const hotDishes: Item[] = [
       out: 119,
     },
     allergens: ["s", "e", "g"],
-    picture: imrs,
+    picture: "images/menu/Nr35.jpg",
   },
   {
     orderNumber: 36,
@@ -52,6 +52,6 @@ export const hotDishes: Item[] = [
       out: 129,
     },
     allergens: ["e", "sk", "b", "hv"],
-    picture: imrs,
+    picture: "images/menu/Nr36.jpg",
   },
 ];
