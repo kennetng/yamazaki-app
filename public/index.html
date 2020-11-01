@@ -1,87 +1,456 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, maximum-scale=1.5" />
-    <meta name=" theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <title>Yamazaki</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Yamazaki</title>
-  </head>
+  <!-- stylesheets css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <div id="firebaseui-auth-container"></div>
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <link rel="stylesheet" href="css/nivo-lightbox.css">
+  <link rel="stylesheet" href="css/nivo_themes/default/default.css">
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/flexslider.css">
 
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyCV3reIw7Iic6woxzhKkaErGYku4dRLxhc",
-        authDomain: "yamazaki-app.firebaseapp.com",
-        databaseURL: "https://yamazaki-app.firebaseio.com",
-        projectId: "yamazaki-app",
-        storageBucket: "yamazaki-app.appspot.com",
-        messagingSenderId: "837723524695",
-        appId: "1:837723524695:web:4d159d781be31f72831d12",
-        measurementId: "G-3F11B930D0",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-      const db = firebase.firestore();
-      db.settings({ timestampsInSnapshots: true });
-    </script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
 
-    <!-- Firebase UI -->
-    <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css"
-    />
-    <script src="./auth.js"></script>
+</head>
 
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Preloader section -->
+  <div class="preloader">
+    <div class="sk-spinner sk-spinner-pulse"></div>
+  </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+  <!-- Home section -->
+  <section id="home" class="parallax-section">
+    <div class="gradient-overlay"></div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-offset-2 col-md-8 col-sm-12">
+          <h1 class="wow fadeInUp" data-wow-delay="0.6s">Yamazaki</h1>
+          <p class="wow fadeInUp" data-wow-delay="1.0s">Sushi og varmretter til en god pris.</p>
+          <a href="#feature" class="wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll"
+            data-wow-delay="1.3s">Se
+            meny</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Navigation section -->
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">Yamazaki</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#top" class="smoothScroll">Hjem</a></li>
+          <li><a href="#forretter" class="smoothScroll">Meny</a></li>
+          <!--<li><a href="#dagensmeny" class="smoothScroll">Dagens sushi</a></li>
+          <li><a href="#sushimeny" class="smoothScroll">Sushi</a></li>-->
+          <li><a href="#contact" class="smoothScroll">Kontakt Oss</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <section id="feature">
+    <section id="forretter" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div float="left">
+            <div id="root"></div>
+            <h2>Forretter</h2>
+
+            <h3>1. Miso suppe 50/55,-</h3>
+            <p>Japansk suppe med kamskjell, sjøtang, tofu og sesam (f-S)</p>
+
+            <h3>2. Fritert Vårruller 2 stk 65/69,- <br /></h3>
+            <p>Kvernet svinekjøtt med scampi og grønnsaker, serveres med chilisaus (b-hv)</p>
+
+            <h3>3. Ferske Vårruller 2 stk 65/69,- </h3>
+            <p>Scampi, kylling og risnudler serveres med chilisaus (sk-hv) </p>
+
+            <h3>4. Innbakt scampi 4 stk 69/75,- </h3>
+            <p>Innbakt scampi serveres med chilisaus (b-hv) </p>
+
+            <h3>5. Tom jam kung 3 stk 75/79</h3>
+            <p>En berømt Thailandsk middels sterk og syrlig scampi suppe med chili, sitron og koriander (sk)</p>
+
+            <h3>6. Tom kha kai 75/79,-</h3>
+            <p>Thailansk middels sterk kylling suppe med kokosmelk,chili, sitron og koriander (m-f) </p>
+
+            <h3>7. Wonton suppe 5stk 75/79,-</h3>
+            <p>Kvernet svinekjøtt og scampi med vårløk og koriander(hv-sk-e-m)</p>
+          </div>
+          <br />
+          <br />
+          <div>
+            <h2>Dagens Sushi</h2>
+
+            <h3>8. 12 biter 119/125,-</h3>
+            <p>3 laks nigiri, 1 scampi nigiri, 8 laks maki (avocado,agurk) (f-b-se-s) </p>
+
+            <h3>9. 14 biter 129/135.-</h3>
+            <p>4 laks nigiri, 1 tunfisk/kveite nigiri, 1 scampi nigiri, 4 innbakt laks futo maki (avocado, purreløk,
+              kimchi), 4 laks maki (avokado, agurk)(f-b-s-se-hv)</p>
+
+            <h3>10. Yamazaki dagens 14 biter 119/125,-</h3>
+            <p>6 innbakt laks futo maki (kimchi,sesamfrø,avocado, purreløk) 8 laks maki ( laks, avocado) (f-hv-se )</p>
+
+            <br />
+            <h2>Sushi meny</h2>
+            <h3>Meny 1. 8-biter 99/105,-</h3>
+            <p>2 laks nigiri, 1 tuna nigiri, 1 kokt scampi nigiri, 4 laks maki (avocado, agurk, purreløk, sesam)
+              (f-s-se)</p>
+
+            <h3>Meny 2. 10-biter 119/125,- </h3>
+            <p>3 laks nigiri, 1 tunfisk nigiri, 1 kveite nigiri, 1 kokt scampi nigiri, 4 laks maki (f-sk-se) </p>
+
+            <h3>Meny 3. 15-biter 165/169</h3>
+            <p>5 laks nigiri, 1 tunfisk nigiri, 1 kveite nigiri, 1 kamskjell nigiri 1 kokt scampi nigiri, 6 laks maki
+              (f-sk-se-g) </p>
+            <h3>Meny 4. 20-biter 219/229</h3>
+            <p>7 laks nigiri, 2 kamskjell nigiri, 1 kveite nigiri, 1 tuna nigiri, 1 kokt scampi nigiri, 8 tempura
+              scampi
+              maki (chili majones) (f-b-hv-se-g) </p>
+
+            <h3>Meny 5. 20-biter 229/235</h3>
+            <p>6 laks nigiri, 2 tunfisk nigiri, 2 kokt scampi nigiri, 1 kamskjell nigiri, 1 kveite nigiri, 8 biter
+              dragonroll maki (tempura scampi, laks, chillimajones) (f-b-g-hv-se)</p>
+            <h3>Meny 6. 30-biter 339/349,-</h3>
+            <p>8 laks nigiri, 2 tuna nigiri, 2 kamskjell nigiri, 2 tunfisk nigiri, 2 kokt scampi nigiri, 2 kveite
+              nigiri,
+              6 biter chililaks maki, 8 biter tempura scampi maki (f-b-sk-hv-se-g)</p>
+            <h3>Party Mix 50-biter 635/649</h3>
+            <p>6 laks nigiri, 2 kokt scampi nigiri, 2 kveite nigiri, 2 kamskjell nigiri, 2 tunfisk nigiri, 6 laks
+              sashimi
+              med div. grønnsalat, avocado, 6 kamskjell futomaki, 6 black dragonmaki laks, 8 mix maki (sk-f-b-hv-g-se)
+            </p>
+
+            <br />
+            <h2>Sashimi meny</h2>
+
+            <h3>Liten sashimi 10 skiver 155/160,- </h3>
+            <p>4 laks, 2 kveite, 2 tunfisk, 1 scampi, kamskjell serveres med ris og ponzu saus( f - sk) </p>
+
+            <h3>Medium sashimi 15 skiver 230/239</h3>
+            <p>6 laks, 3 tunfisk, 3 kveite , 2 scampi, 1 kamskjell serveres med ris og ponzusaus ( f-b-sk)</p>
+
+            <br />
+            <h2>Nigiri</h2>
+            <h3>2 biter pr.ordre</h3>
+            <h3>Klasse 1: Laks, crabstick, avocado 30,-</h3>
+            <h3>Klasse 2: Tuna, kamskjell, scampi, kveite 34,-</h3>
+
+            <br />
+            <h2>Maki 8 biter </h2>
+
+            <h3>11. Vegetar maki 60/65,-</h3>
+            <p>Avocado, agurk, purreløk med sesamfrø (se)</p>
+
+            <h3>12. Laks maki 65/69,- </h3>
+            <p>Laks med avocado og sesamfrø (f-se) </p>
+
+            <h3>13. California maki 65/69,- </h3>
+            <p>Crabstick med avocado-sesamfrø (sk-se) </p>
+
+            <h3>14. Spicy tuna maki 75/79,- </h3>
+            <p>Tunfisk med kimchi og sesamfrø (f-se) </p>
+
+            <h3>15. Philadelphia laks 85/89,-</h3>
+            <p>Avocado, agurk, purreløk og philadelphia ost (f-se) </p>
+
+            <h3>16. Tempura scampi maki 79/85,-</h3>
+            <p>Innbakt scampi med avocado, chilimajones, sesamfrø (sk-hv-g) </p>
+
+            <h3>17. Tempura kylling 79/85,-</h3>
+            <p>Innbakt kylling, avocado, sesamfrø, chilimajones (s-se) </p>
+
+            <h3>18. Tempura duck maki 99/109,- </h3>
+            <p>Innbakt and, avocado, agurk, purreløk, chilimajones (hv-se)</p>
+
+            <h3>19. Majones kingcrab 99/109,-</h3>
+            <p>Kongekrabbe ,tobikorogn, chilimajones, avocado, agurk (sk-se) </p>
+
+            <h3>20. Scallop fusion maki 95/105,-</h3>
+            <p>Kamskjell, chilimajones, tobikorogn, kimchi, avocado, agurk (b-s-se-g)</p>
+
+            <h3>21. Mango maki 119/129,-</h3>
+            <p>Innbakt laks, philadelphia ost, avocado, agurk, mango med terriyaki saus, sesamfrø (f-g-se)</p>
+
+            <h3>22. Tempura avocado 119/125,-</h3>
+            <p>Tempura scampi, avocado, agurk, purreløk, lakserogn, chilimajones (sk-f-se)</p>
+
+            <h3>23. Dragonroll maki 129/135,-</h3>
+            <p>Tempura scampi, laks, philadelphia ost, avocado, agurk, terriyakisaus, chilimajones, sesamfrø
+              (sk-b-g-f-se)</p>
+
+            <h3>24. Black dragon 125/129,-</h3>
+            <p>Tunfisk, kokt scampi, kimchi. Avocado, blåber, pistasje saus (sk-f-hv-se)</p>
+
+            <h3>25. Kamskjell maki 145/149,-</h3>
+            <p>Innbakt scampi, kokt scampi, kamskjell, avocado, philadelphia, ost, tobikorogn, pistasjesaus
+              (hv-f-b-g-sk-se)</p>
+
+            <br />
+            <h2>Futo maki</h3>
+
+              <h3>26. Tempura softshellcrab 6 biter 95/99,-</h3>
+              <p>Innbakt softshellcrab med kimchi, avocado (sk- se-hv)</p>
+
+              <h3>27. Tempura kingcrab 6 biter 95/105,-</h3>
+              <p>Innbakt kingcrab med kimchi, avocado ( hv-sk-se)</p>
+
+              <h3>28. Chililaks laks 6 biter 75/79,-</h3>
+              <p>Purreløk, avocado, agurk, kimchi, sesamfrø (f-se)</p>
+
+              <h3>29. Futo special 8 biter 109/119,-</h3>
+              <p>Laks, tunfisk, kokt scampi, avocado, tobikorogn, terriyakisaus (f-sk-b-g-se )</p>
+
+              <h3>30. Futo tempura special 12 biter 159/165,-</h3>
+              <p>Tempura scampi, laks, avocado, agurk, tobikorogn og terriyakisaus (hv-sk-f-se-)</p>
+
+              <br />
+              <h2>Frityrstekt maki</h2>
+
+              <h3>31. Frityrstekt scampi maki 6 biter 89/95,-</h3>
+              <p>Scampi, kimchi, chilimajones, avocado (sk-hv-se )</p>
+
+              <h3>32. Frityrstekt laks maki 6 biter 89/95,-</h3>
+              <p>Laks, kimchi, chilimajones, avocado, purreløk (hv-f-g)</p>
+
+              <h3>33. Frityrstekt and 6 biter 99/105,-</h3>
+              <p>And, kimchi, avocado, purreløk, chilimajones (hv-se)</p>
+          </div>
+
+          <div>
+            <br />
+            <h2>Varmretter</h2>
+            <h3>Thailandsk, Vietnamesisk, Kinesisk Mat</h2>
+
+              <h3>34. Pad Thai 139/145,-</h3>
+              <p>Thailandske stekte nudler med kylling, scampi, egg, bønnespirer serveres med sitron, sprøstekt løk
+                (e-sk-p-)</p>
+
+              <h3>35. Stekt ris 119/125,-</h3>
+              <p>Scampi, kylling, egg, erter, mais, gullrøtter (s-e-g)</p>
+
+              <h3>36. Stekte nudler 129/135,-</h3>
+              <p>Husets stekte eggnudler med grønnsaker, Velg mellom biff/ kylling eller sjømat
+                (scampi, kamskjell, crabstick) (e-sk-b-hv)</p>
+
+              <br />
+              <h2>Biffretter</h2>
+              <h3>Alle retter serveres med ris</h3>
+
+              <h3>37. Biff chopsuey med grønnsaker 139/145,-</h3>
+
+              <h3>38. Biff saté med satésaus og grønnsaker 139/149,-</h3>
+
+              <h3>39. Szechuan biff med grønnsaker 138/145,-</h3>
+
+              <h3>40. Biff med grønnsaker i peanøtter og kokosmelk 149/159,- (p-)</h3>
+
+              <h3>41. Biff med grønnsaker I rød karri og kokosmelk 149/159,-</h3>
+
+              <h3>42. Biff med grønnsaker i indisk karri og kokosmelk 149/159,- (Hv-Fs)</h3>
+
+              <br />
+              <h2>Kyllingretter</h2>
+              <h3>Alle retter serveres med ris</h3>
+              
+              <h3>43. Kylling chopsuey med grønnsaker 129/139,- </h3>
+              <h3>44. Kylling saté med satésaus og grønnsaker 129/139,-</h3>
+
+              <h3>45. Kylling og grønnsaker i grønn karri og kokosmelk 139/149,- (Fs-)</h3>
+
+              <h3>46. Gong Bao 149/159,-</h3>
+              <p>Kylling og grønnsaker i en smaksfull kinesisk saus med cashewnøtter (P-Fs-Hv)</p>
+
+              <h3>47. Szechuan kylling med grønnsaker 139/149,- (S-Hv)</h3>
+
+              <h3>48. Innbakt kylling og grønnsaker i sursøtsaus 139/149,- (Fs-Hv)</h3>
+
+              <h3>49. Kylling og grønnsaker i peanøttsaus og kokosmelk 139/149,- (P-Fs)</h3>
+
+              <h3>50. Kylling og grønnsaker i rød karri og kokosmelk 139/149,- (F-S)</h3>
+              <h3>51. Kylling og grønnsaker i indisk karri og kokosmelk 139/149,-</h3>
+
+              <h2>Sjømatretter</h2>
+              <h3>52. Innbakt scampi med grønnsaker 149/155,- serveres med sursøtsaus, (SK-Hv-Fs)</h3>
+              <h3>53. Scampi og grønnsaker i krydret chilisaus 149/155,- (Sk-Fs-Hv)</h3>
+
+              <h3>54. Sjørett med grønnsaker i en thailandsk, syrlig sterk saus 159/165,- Laks, kamskjell,
+                scampi (Sk-b-F-Hv-Fs)</h3>
+
+              <h3>55. Sjørett med grønnsaker i østersaus 179/189,- Laks, steinbit, kamskjell, scampi (Sk-B-F-Hv)</h3>
+              <h3>56. Grillet and med grønnsaker i hoisinsaus 179/189,- (Hv-S)</h3>
+
+              <h3>57. Szechuan and med grønnsaker 179/189,- ( Fs-s-Hv)</h3>
+              
+              <h3>60. Kylling cashewnøtter 139/149,- </h3>
+              <p>Kylling med grønnsaker-cashewnøtter og østesaus (N)</p>
+
+              <h3>61. Kylling ingefær 129/139,-</h3>
+              <p>Kylling med grønnsaker og ingefær</p>
+
+              <h3>62. Kylling med karri 129/139,-</h3>
+              <p>Grønnsakger og ingefær</p>
+
+              <h3>63. Pepper biff 149/159,-</h3>
+              <p>Grønnsaker, hvitløk og rødvin </p>
+              <h3>64. Biff med brokkoli 149/159,-</h3>
+              <p>Biff med brokkoli og soyasaus</p>
+
+              <h3>Svinekjøtt chopsuey med grønnsaker 129/139,-</h3>
+              <h3>Szechuan svine grønnsaker m/szechuansaus 139/149,-</h3>
+              <br />
+
+              <h2>Mineralvann</h2>
+              <h3>0.5 L Cola, Fanta, Iste, Farris, Sprite 35,-</h3>
+          </div>
+
+          <div>
+            <h3>Ekstra</h3>
+            <p>Kjøtt 30,-</p>
+            <p>Grønnsaker 20,-</p>
+            <p>Scampi (2stk) 30,-</p>
+            <p>Ris (boks) 15,-</p>
+            <p>Ingefær 15,-<p> 
+              <p>Soyasaus 15,-</p>
+            <p>Ponzusaus 20,-</p>
+            <p>Sjøgress 20,-</p>
+            <p>Søt chilisaus 10,-</p>
+            <p>Chilimajones 10,-</p>
+            <p>Kimchi 20,-</p>
+          </div>
+
+          <div>
+            <h3>Allergener</h3>
+            <p>G - Gluten, Sk - Skalldyr, E - Egg F - Fisk, P - Peanøtter s - Soyasaus, M - Melk</p>
+            <p>N - Nøtter, SE - Sesamfrø, B - Bløtdyr, HV - Hvetemel, Fs - Fiskesaus</p>
+          </div>
+
+
+
+
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.3s">
+          <h3>Kontakt info</h3>
+          <p>Pilesteredet 51b, 0350 Oslo</p>
+          <p>22 60 88 00</p>
+          <p></p>
+        </div>
+
+        <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+          <h3>Åpningstider</h3>
+          <strong>Mandag - Fredag</strong>
+          <p>11:00 - 20:00 </p>
+          <strong>Lørdag - Søndag</strong>
+          <p>14:00 - 21:00 </p>
+        </div>
+        <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.9s">
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="321" height="304" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Pilesteredet%2051b%2C%200350%20Oslo&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://www.pureblack.de">pureblack.de</a></div>
+            <style>
+              .mapouter {
+                text-align: right;
+                height: 304px;
+                width: 321px;
+              }
+
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 304px;
+                width: 321px;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Copyright section -->
+  <section id="copyright">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8 col-sm-8 col-xs-8">
+          <p>Copyright © 2020 Yamazaki - Designed by <a class="designed-by" href="https://plus.google.com/+Tooplate/"
+              target="_blank">Tooplate</a></p>
+        </div>
+
+        <div class="col-md-4 col-sm-4 text-right">
+          <a href="#home" class="fa fa-angle-up smoothScroll gototop"></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- javscript js -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/jquery.magnific-popup.min.js"></script>
+
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+
+  <script src="js/isotope.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/nivo-lightbox.min.js"></script>
+
+  <script src="js/jquery.flexslider-min.js"></script>
+
+  <script src="js/jquery.parallax.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <script src="js/custom.js"></script>
+
+</body>
+
 </html>
