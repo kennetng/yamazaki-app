@@ -119,7 +119,7 @@ export const sushiMenu: Item[] = [
     },
     description: {
       no:
-        "6 laks nigiri, 2 kokt scampi nigiri, 2 kveite nigiri, 2 kamskjell nigiri, 2 tunfisk nigiri, 6 laks sashimi med div. grønnsalat, avocado, 6 kamskjell futomaki, 6 black dragonmaki laks, 8 mix mak",
+        "6 laks nigiri, 2 kokt scampi nigiri, 2 kveite nigiri, 2 kamskjell nigiri, 2 tunfisk nigiri, 6 laks sashimi med div. grønnsalat, avocado, 6 kamskjell futomaki, 6 black dragonmaki laks, 8 mix maki",
       en: "Very good Spaghetti",
     },
     price: {
