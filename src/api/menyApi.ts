@@ -4,7 +4,7 @@ import useSWR from "swr";
 export const baseUrl = "http://161.35.84.11";
 
 export interface Item {
-  id: number;
+  orderNumber: number;
   title: { [key: string]: string };
   description: { [key: string]: string };
   price: {

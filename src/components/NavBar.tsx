@@ -38,7 +38,6 @@ const useStyles = makeStyles((theme: Theme) =>
     }),
 );
 
-//TODO: usel18n()
 export const NavBar = () => {
     const { t } = useTranslation();
     const classes = useStyles();

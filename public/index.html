@@ -1,87 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, maximum-scale=1.5" />
-    <meta name=" theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <title>Yamazaki</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Yamazaki</title>
-  </head>
+  <!-- stylesheets css -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+  <link rel="stylesheet" href="css/magnific-popup.css">
 
-    <div id="firebaseui-auth-container"></div>
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <link rel="stylesheet" href="css/nivo-lightbox.css">
+  <link rel="stylesheet" href="css/nivo_themes/default/default.css">
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <link rel="stylesheet" href="css/hover-min.css">
+  <link rel="stylesheet" href="css/flexslider.css">
 
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+  <link rel="stylesheet" href="css/style.css">
 
-    <script>
-      // Your web app's Firebase configuration
-      var firebaseConfig = {
-        apiKey: "AIzaSyCV3reIw7Iic6woxzhKkaErGYku4dRLxhc",
-        authDomain: "yamazaki-app.firebaseapp.com",
-        databaseURL: "https://yamazaki-app.firebaseio.com",
-        projectId: "yamazaki-app",
-        storageBucket: "yamazaki-app.appspot.com",
-        messagingSenderId: "837723524695",
-        appId: "1:837723524695:web:4d159d781be31f72831d12",
-        measurementId: "G-3F11B930D0",
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-      const db = firebase.firestore();
-      db.settings({ timestampsInSnapshots: true });
-    </script>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600' rel='stylesheet' type='text/css'>
 
-    <!-- Firebase UI -->
-    <script src="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.js"></script>
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="https://www.gstatic.com/firebasejs/ui/4.5.0/firebase-ui-auth.css"
-    />
-    <script src="./auth.js"></script>
+</head>
 
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Preloader section -->
+  <div class="preloader">
+    <div class="sk-spinner sk-spinner-pulse"></div>
+  </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+  <!-- Home section -->
+  <section id="home" class="parallax-section">
+    <div class="gradient-overlay"></div>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-offset-2 col-md-8 col-sm-12">
+          <h1 class="wow fadeInUp" data-wow-delay="0.6s">Yamazaki</h1>
+          <p class="wow fadeInUp" data-wow-delay="1.0s">Sushi og varmretter til en god pris.</p>
+          <a href="#feature" class="wow fadeInUp btn btn-default hvr-bounce-to-top smoothScroll"
+            data-wow-delay="1.3s">Se
+            meny</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Navigation section -->
+  <div class="navbar navbar-default navbar-static-top" role="navigation">
+    <div class="container">
+
+      <div class="navbar-header">
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+          <span class="icon icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand">Yamazaki</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#top" class="smoothScroll">Hjem</a></li>
+          <li><a href="#menu" class="smoothScroll">Meny</a></li>
+          <li><a href="#contact" class="smoothScroll">Kontakt Oss</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <section id="feature">
+    <section id="menu" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div id="root"></div>
+        </div>
+        <div class="row">
+          <div>
+            <h3>Allergener</h3>
+            <p>g - Gluten, sk - Skalldyr, e - Egg f - Fisk, p - Peanøtter, s - Soyasaus, m - Melk</p>
+            <p>n - Nøtter, se - Sesamfrø, b - Bløtdyr, hv - Hvetemel, fs - Fiskesaus</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- Footer section -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.3s">
+          <h3>Kontakt info</h3>
+          <p>Pilesteredet 51b, 0350 Oslo</p>
+          <p>22 60 88 00</p>
+          <p></p>
+        </div>
+
+        <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.6s">
+          <h3>Åpningstider</h3>
+          <strong>Mandag - Fredag</strong>
+          <p>11:00 - 20:00 </p>
+          <strong>Lørdag - Søndag</strong>
+          <p>14:00 - 21:00 </p>
+        </div>
+        <div class="wow fadeInUp col-md-4 col-sm-4" data-wow-delay="0.9s">
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe width="321" height="304" id="gmap_canvas"
+                src="https://maps.google.com/maps?q=Pilesteredet%2051b%2C%200350%20Oslo&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                href="https://www.pureblack.de">pureblack.de</a></div>
+            <style>
+              .mapouter {
+                text-align: right;
+                height: 304px;
+                width: 321px;
+              }
+
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 304px;
+                width: 321px;
+              }
+            </style>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Copyright section -->
+  <section id="copyright">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8 col-sm-8 col-xs-8">
+          <p>Copyright © 2020 Yamazaki - Designed by <a class="designed-by" href="https://plus.google.com/+Tooplate/"
+              target="_blank">Tooplate</a></p>
+        </div>
+
+        <div class="col-md-4 col-sm-4 text-right">
+          <a href="#home" class="fa fa-angle-up smoothScroll gototop"></a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- javscript js -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script src="js/jquery.magnific-popup.min.js"></script>
+
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+
+  <script src="js/isotope.js"></script>
+  <script src="js/imagesloaded.min.js"></script>
+  <script src="js/nivo-lightbox.min.js"></script>
+
+  <script src="js/jquery.flexslider-min.js"></script>
+
+  <script src="js/jquery.parallax.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/wow.min.js"></script>
+
+  <script src="js/custom.js"></script>
+
+</body>
+
 </html>
