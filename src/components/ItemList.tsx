@@ -26,7 +26,7 @@ interface ItemListProps {
 
 export const ItemList: FC<ItemListProps> = ({ title, subTitle, items, hideOrderNumber }) => {
     const classes = useStyles();
-    const isNarrowWidth = useMediaQuery('(max-width:1000px)')
+    const isNarrowWidth = useMediaQuery('(max-width:700px)')
 
     return (
         <>

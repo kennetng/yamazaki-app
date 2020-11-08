@@ -13,13 +13,13 @@ import { Item } from '../api/menyApi';
 const useStyles = makeStyles({
     title: {
         height: 100,
-        "@media (max-width:1000px)":{
+        "@media (max-width:700px)":{
             height: 40,
         }
     },
     content: {
         height: 150,
-        "@media (max-width:1000px)":{
+        "@media (max-width:700px)":{
             height: 100,
         }
     },
