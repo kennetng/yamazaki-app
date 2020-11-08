@@ -11,14 +11,17 @@ import { getLanguage } from "../locale/i18n";
 import { Item } from '../api/menyApi';
 
 const useStyles = makeStyles({
-    root: {
-        maxWidth: 345,
-    },
     title: {
         height: 100,
+        "@media (max-width:1000px)":{
+            height: 40,
+        }
     },
     content: {
         height: 150,
+        "@media (max-width:1000px)":{
+            height: 100,
+        }
     },
     media: {
         height: 200,
@@ -35,7 +38,7 @@ export const ItemCard: FC<ItemCardProps> = ({ item, hideOrderNumber }) => {
     const language = getLanguage();
 
     return (
-        <Card className={classes.root}>
+        <Card>
             <CardMedia
                 className={classes.media}
                 image={item.picture}

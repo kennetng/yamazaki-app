@@ -9,6 +9,10 @@ const useStyles = makeStyles(() =>
         title: {
             marginBottom: "40px",
             marginTop: "40px"
+        },
+        mediaCard:{
+            maxWidth: "100%",
+            width: "100%",
         }
     }),
 );
@@ -44,7 +48,7 @@ export const ItemList: FC<ItemListProps> = ({ title, subTitle, items, hideOrderN
                 {
                     items.map(
                         (item: Item) =>
-                            <Grid item xs={isNarrowWidth ? 6 : 3} >
+                            <Grid className={classes.mediaCard} item xs={isNarrowWidth ? 6 : 3} >
                                 <ItemCard item={item} hideOrderNumber={hideOrderNumber}/>
                             </Grid>
                     )
