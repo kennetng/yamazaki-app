@@ -1,3 +1,4 @@
+import { Item } from "../../api/menyApi";
 import { beefDishes } from "./beefDishes";
 import { chickenDishes } from "./chickenDishes";
 import { deepFriedMaki } from "./deepFriedMaki";
@@ -13,19 +14,24 @@ import { starter } from "./starter";
 import { sushiMenu } from "./sushiMenu";
 import { sushiOfToday } from "./sushiOfToday";
 
-export const menuItems = [
-  ...starter,
-  ...sushiOfToday,
-  ...sushiMenu,
-  ...sashimiMenu,
-  ...nigiri,
-  ...maki,
-  ...futoMaki,
-  ...deepFriedMaki,
-  ...hotDishes,
-  ...beefDishes,
-  ...chickenDishes,
-  ...seafoodDishes,
-  ...mineralWater,
-  ...extra,
+type menuItem = {
+  title: string;
+  item: Item[];
+};
+
+export const menuItems: menuItem[] = [
+  { title: "items.starter.title", item: starter },
+  { title: "items.sushiOfToday.title", item: sushiOfToday },
+  { title: "items.sushi.title", item: sushiMenu },
+  { title: "items.sashimi.title", item: sashimiMenu },
+  { title: "items.nigiri.title", item: nigiri },
+  { title: "items.maki.title", item: maki },
+  { title: "items.futoMaki.title", item: futoMaki },
+  { title: "items.deepFriedMaki.title", item: deepFriedMaki },
+  { title: "items.hotDishes.title", item: hotDishes },
+  { title: "items.beefDishes.title", item: beefDishes },
+  { title: "items.chickenDishes.title", item: chickenDishes },
+  { title: "items.seafoodDishes.title", item: seafoodDishes },
+  { title: "items.mineralWater.title", item: mineralWater },
+  { title: "items.extra.title", item: extra },
 ];
