@@ -1,63 +1,63 @@
 export default {
   common: {
-    home: "Hjem",
-    about: "About",
-    menu: "Meny",
-    "order-online": "Bestill på nett",
-    contact: "Kontakt oss",
-    in: "Inn",
-    out: "Ut",
+    home: 'Hjem',
+    about: 'About',
+    menu: 'Meny',
+    'order-online': 'Bestill på nett',
+    contact: 'Kontakt oss',
+    in: 'Inn',
+    out: 'Ut'
   },
   items: {
     starter: {
-      title: "Forretter",
+      title: 'Forretter'
     },
     sushiOfToday: {
-      title: "Dagens sushi",
+      title: 'Dagens sushi'
     },
     sushi: {
-      title: "Sushi meny",
+      title: 'Sushi meny'
     },
     sashimi: {
-      title: "Sashimi meny",
+      title: 'Sashimi meny'
     },
     nigiri: {
-      title: "Nigiri 2 biter",
+      title: 'Nigiri 2 biter'
     },
     maki: {
-      title: "Maki 8 biter",
+      title: 'Maki 8 biter'
     },
     futoMaki: {
-      title: "Futo maki",
+      title: 'Futo maki'
     },
     deepFriedMaki: {
-      title: "Frityrstekt maki",
+      title: 'Frityrstekt maki'
     },
     hotDishes: {
-      title: "Varmretter",
-      subTitle: "Thailandsk, Vietnamesisk, Kinesisk Mat",
+      title: 'Varmretter',
+      subTitle: 'Thailandsk, Vietnamesisk, Kinesisk Mat'
     },
     beefDishes: {
-      title: "Biffretter",
-      subTitle: "Alle retter serveres med ris"
+      title: 'Biffretter',
+      subTitle: 'Alle retter serveres med ris'
     },
     chickenDishes: {
-      title: "Kyllingretter",
-      subTitle: "Alle retter serveres med ris"
+      title: 'Kyllingretter',
+      subTitle: 'Alle retter serveres med ris'
     },
     seafoodDishes: {
-      title: "Sjømatretter",
+      title: 'Sjømatretter'
     },
     mineralWater: {
-      title:"Mineralvann",
-      cola: "Cola",
-      fanta: "Fanta",
-      iceTea: "Ice Tea",
-      farris: "Farris",
-      sprite: "Sprite",
+      title: 'Mineralvann',
+      cola: 'Cola',
+      fanta: 'Fanta',
+      iceTea: 'Ice Tea',
+      farris: 'Farris',
+      sprite: 'Sprite'
     },
     extra: {
-      title: "Ekstra"
+      title: 'Ekstra'
     }
-  },
-};
+  }
+}

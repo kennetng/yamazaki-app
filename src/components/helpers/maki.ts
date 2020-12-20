@@ -1,264 +1,264 @@
-import { Item } from "../../api/menyApi";
+import { Item } from '../../api/menyApi'
 
-import imrs from "../../imrs.jpg";
+import imrs from '../../imrs.jpg'
 
 export const maki: Item[] = [
   {
     orderNumber: 11,
     title: {
-      no: "Vegetar maki",
-      en: "Spaghetti",
+      no: 'Vegetar maki',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Avocado, agurk, purreløk med sesamfrø",
-      en: "Very good Spaghetti",
+      no: 'Avocado, agurk, purreløk med sesamfrø',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 65,
-      out: 60,
+      out: 60
     },
-    allergens: ["se"],
-    picture: imrs,
+    allergens: ['se'],
+    picture: imrs
   },
   {
     orderNumber: 12,
     title: {
-      no: "Laks maki",
-      en: "Spaghetti",
+      no: 'Laks maki',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Laks med avocado og sesamfrø",
-      en: "Very good Spaghetti",
+      no: 'Laks med avocado og sesamfrø',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 69,
-      out: 65,
+      out: 65
     },
-    allergens: ["f", "se"],
-    picture: "images/menu/Nr12.jpg",
+    allergens: ['f', 'se'],
+    picture: 'images/menu/Nr12.jpg'
   },
   {
     orderNumber: 13,
     title: {
-      no: "California maki",
-      en: "Spaghetti",
+      no: 'California maki',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Crabstick med avocado-sesamfrø",
-      en: "Very good Spaghetti",
+      no: 'Crabstick med avocado-sesamfrø',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 69,
-      out: 65,
+      out: 65
     },
-    allergens: ["f", "se"],
-    picture: imrs,
+    allergens: ['f', 'se'],
+    picture: imrs
   },
   {
     orderNumber: 14,
     title: {
-      no: "Spicy tuna maki",
-      en: "Spaghetti",
+      no: 'Spicy tuna maki',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Tunfisk med kimchi og sesamfrø",
-      en: "Very good Spaghetti",
+      no: 'Tunfisk med kimchi og sesamfrø',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 79,
-      out: 75,
+      out: 75
     },
-    allergens: ["f", "se"],
-    picture: imrs,
+    allergens: ['f', 'se'],
+    picture: imrs
   },
   {
     orderNumber: 15,
     title: {
-      no: "Philadelphia laks",
-      en: "Spaghetti",
+      no: 'Philadelphia laks',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Avocado, agurk, purreløk og philadelphia ost",
-      en: "Very good Spaghetti",
+      no: 'Avocado, agurk, purreløk og philadelphia ost',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 89,
-      out: 85,
+      out: 85
     },
-    allergens: ["f", "se"],
-    picture: "images/menu/Nr15.jpg",
+    allergens: ['f', 'se'],
+    picture: 'images/menu/Nr15.jpeg'
   },
   {
     orderNumber: 16,
     title: {
-      no: "Tempura scampi maki",
-      en: "Spaghetti",
+      no: 'Tempura scampi maki',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Innbakt scampi med avocado, chilimajones, sesamfrø",
-      en: "Very good Spaghetti",
+      no: 'Innbakt scampi med avocado, chilimajones, sesamfrø',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 85,
-      out: 79,
+      out: 79
     },
-    allergens: ["sk", "hv", "g"],
-    picture: imrs,
+    allergens: ['sk', 'hv', 'g'],
+    picture: 'images/menu/Nr16.jpeg'
   },
   {
     orderNumber: 17,
     title: {
-      no: "Tempura kylling maki",
-      en: "Spaghetti",
+      no: 'Tempura kylling maki',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Innbakt kylling, avocado, sesamfrø, chilimajones",
-      en: "Very good Spaghetti",
+      no: 'Innbakt kylling, avocado, sesamfrø, chilimajones',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 85,
-      out: 79,
+      out: 79
     },
-    allergens: ["s", "se"],
-    picture: imrs,
+    allergens: ['s', 'se'],
+    picture: imrs
   },
   {
     orderNumber: 18,
     title: {
-      no: "Tempura duck maki",
-      en: "Spaghetti",
+      no: 'Tempura duck maki',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Innbakt and, avocado, agurk, purreløk, chilimajones",
-      en: "Very good Spaghetti",
+      no: 'Innbakt and, avocado, agurk, purreløk, chilimajones',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 109,
-      out: 99,
+      out: 99
     },
-    allergens: ["hv", "se"],
-    picture: imrs,
+    allergens: ['hv', 'se'],
+    picture: imrs
   },
   {
     orderNumber: 19,
     title: {
-      no: "Majones kingcrab maki",
-      en: "Spaghetti",
+      no: 'Majones kingcrab maki',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Kongekrabbe ,tobikorogn, chilimajones, avocado, agurk",
-      en: "Very good Spaghetti",
+      no: 'Kongekrabbe ,tobikorogn, chilimajones, avocado, agurk',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 109,
-      out: 99,
+      out: 99
     },
-    allergens: ["sk", "se"],
-    picture: imrs,
+    allergens: ['sk', 'se'],
+    picture: imrs
   },
   {
     orderNumber: 20,
     title: {
-      no: "Scallop fusion maki ",
-      en: "Spaghetti",
+      no: 'Scallop fusion maki ',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Kongekrabbe ,tobikorogn, chilimajones, avocado, agurk",
-      en: "Very good Spaghetti",
+      no: 'Kongekrabbe ,tobikorogn, chilimajones, avocado, agurk',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 105,
-      out: 95,
+      out: 95
     },
-    allergens: ["b", "s", "se", "g"],
-    picture: imrs,
+    allergens: ['b', 's', 'se', 'g'],
+    picture: imrs
   },
   {
     orderNumber: 21,
     title: {
-      no: "Mango maki",
-      en: "Spaghetti",
+      no: 'Mango maki',
+      en: 'Spaghetti'
     },
     description: {
       no:
-        "Innbakt laks, philadelphia ost, avocado, agurk, mango med terriyaki saus, sesamfrø",
-      en: "Very good Spaghetti",
+        'Innbakt laks, philadelphia ost, avocado, agurk, mango med terriyaki saus, sesamfrø',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 129,
-      out: 119,
+      out: 119
     },
-    allergens: ["f", "g", "se"],
-    picture: imrs,
+    allergens: ['f', 'g', 'se'],
+    picture: 'images/menu/Nr21.jpeg'
   },
   {
     orderNumber: 22,
     title: {
-      no: "Tempura avocado",
-      en: "Spaghetti",
+      no: 'Tempura avocado',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Tempura scampi, avocado, agurk, purreløk, lakserogn, chilimajones",
-      en: "Very good Spaghetti",
+      no: 'Tempura scampi, avocado, agurk, purreløk, lakserogn, chilimajones',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 125,
-      out: 119,
+      out: 119
     },
-    allergens: ["sk", "f", "se"],
-    picture: "images/menu/Nr22.jpg",
+    allergens: ['sk', 'f', 'se'],
+    picture: 'images/menu/Nr22.jpg'
   },
   {
     orderNumber: 23,
     title: {
-      no: "Dragonroll maki",
-      en: "Spaghetti",
+      no: 'Dragonroll maki',
+      en: 'Spaghetti'
     },
     description: {
       no:
-        "Tempura scampi, laks, philadelphia ost, avocado, agurk, terriyakisaus, chilimajones, sesamfrø",
-      en: "Very good Spaghetti",
+        'Tempura scampi, laks, philadelphia ost, avocado, agurk, terriyakisaus, chilimajones, sesamfrø',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 135,
-      out: 129,
+      out: 129
     },
-    allergens: ["sk", "b", "g", "f", "se"],
-    picture: imrs,
+    allergens: ['sk', 'b', 'g', 'f', 'se'],
+    picture: imrs
   },
   {
     orderNumber: 24,
     title: {
-      no: "Black dragon maki",
-      en: "Spaghetti",
+      no: 'Black dragon maki',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Tunfisk, kokt scampi, kimchi. Avocado, blåber, pistasje saus",
-      en: "Very good Spaghetti",
+      no: 'Tunfisk, kokt scampi, kimchi. Avocado, blåber, pistasje saus',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 129,
-      out: 125,
+      out: 125
     },
-    allergens: ["sk", "f", "hv", "se"],
-    picture: imrs,
+    allergens: ['sk', 'f', 'hv', 'se'],
+    picture: imrs
   },
   {
     orderNumber: 25,
     title: {
-      no: "Kamskjell maki",
-      en: "Spaghetti",
+      no: 'Kamskjell maki',
+      en: 'Spaghetti'
     },
     description: {
       no:
-        "Innbakt scampi, kokt scampi, kamskjell, avocado, philadelphia, ost, tobikorogn, pistasjesaus",
-      en: "Very good Spaghetti",
+        'Innbakt scampi, kokt scampi, kamskjell, avocado, philadelphia, ost, tobikorogn, pistasjesaus',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 149,
-      out: 145,
+      out: 145
     },
-    allergens: ["hv", "f", "b", "g", "sk", "se"],
-    picture: "images/menu/Nr25.jpg",
-  },
-];
+    allergens: ['hv', 'f', 'b', 'g', 'sk', 'se'],
+    picture: 'images/menu/Nr25.jpg'
+  }
+]

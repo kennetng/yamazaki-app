@@ -1,57 +1,57 @@
-import { Item } from "../../api/menyApi";
+import { Item } from '../../api/menyApi'
 
-import imrs from "../../imrs.jpg";
+import imrs from '../../imrs.jpg'
 
 export const hotDishes: Item[] = [
   {
     orderNumber: 34,
     title: {
-      no: "Pad Thai",
-      en: "Spaghetti",
+      no: 'Pad Thai',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Thailandske stekte nudler med kylling, scampi, egg, bønnespirer serveres med sitron, sprøstekt løk",
-      en: "Very good Spaghetti",
+      no: 'Thailandske stekte nudler med kylling, scampi, egg, bønnespirer serveres med sitron, sprøstekt løk',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 145,
-      out: 139,
+      out: 139
     },
-    allergens: ["e", "sk", "p"],
-    picture: imrs,
+    allergens: ['e', 'sk', 'p'],
+    picture: imrs
   },
   {
     orderNumber: 35,
     title: {
-      no: "Stekt ris",
-      en: "Spaghetti",
+      no: 'Stekt ris',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Scampi, kylling, egg, erter, mais, gullrøtter",
-      en: "Very good Spaghetti",
+      no: 'Scampi, kylling, egg, erter, mais, gullrøtter',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 125,
-      out: 119,
+      out: 119
     },
-    allergens: ["s", "e", "g"],
-    picture: "images/menu/Nr35.jpg",
+    allergens: ['s', 'e', 'g'],
+    picture: 'images/menu/Nr35.jpg'
   },
   {
     orderNumber: 36,
     title: {
-      no: "Stekte nudler",
-      en: "Spaghetti",
+      no: 'Stekte nudler',
+      en: 'Spaghetti'
     },
     description: {
-      no: "Husets stekte eggnudler med grønnsaker, Velg mellom biff/ kylling eller sjømat (scampi, kamskjell, crabstick)",
-      en: "Very good Spaghetti",
+      no: 'Husets stekte eggnudler med grønnsaker, Velg mellom biff/ kylling eller sjømat (scampi, kamskjell, crabstick)',
+      en: 'Very good Spaghetti'
     },
     price: {
       in: 135,
-      out: 129,
+      out: 129
     },
-    allergens: ["e", "sk", "b", "hv"],
-    picture: "images/menu/Nr36.jpg",
-  },
-];
+    allergens: ['e', 'sk', 'b', 'hv'],
+    picture: 'images/menu/Nr36.jpg'
+  }
+]

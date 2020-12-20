@@ -1,21 +1,21 @@
-import React, { FC } from "react";
-import { Typography, Grid, makeStyles, createStyles, useMediaQuery, Container } from "@material-ui/core";
+import React, { FC } from 'react'
+import { Typography, Grid, makeStyles, createStyles, useMediaQuery, Container } from '@material-ui/core'
 
-import { ItemCard } from "./ItemCard";
-import { Item } from "../api/menyApi";
+import { ItemCard } from './ItemCard'
+import { Item } from '../api/menyApi'
 
 const useStyles = makeStyles(() =>
-    createStyles({
-        title: {
-            marginBottom: "40px",
-            marginTop: "40px"
-        },
-        mediaCard:{
-            maxWidth: "100%",
-            width: "100%",
-        }
-    }),
-);
+  createStyles({
+    title: {
+      marginBottom: '40px',
+      marginTop: '40px'
+    },
+    mediaCard: {
+      maxWidth: '100%',
+      width: '100%'
+    }
+  })
+)
 
 interface ItemListProps {
     title: string;
@@ -25,10 +25,10 @@ interface ItemListProps {
 }
 
 export const ItemList: FC<ItemListProps> = ({ title, subTitle, items, hideOrderNumber }) => {
-    const classes = useStyles();
-    const isNarrowWidth = useMediaQuery('(max-width:700px)')
+  const classes = useStyles()
+  const isNarrowWidth = useMediaQuery('(max-width:700px)')
 
-    return (
+  return (
         <>
             <Container className={classes.title}>
                 <Typography variant="h3" component="h2">
@@ -47,7 +47,7 @@ export const ItemList: FC<ItemListProps> = ({ title, subTitle, items, hideOrderN
             >
                 {
                     items.map(
-                        (item: Item) =>
+                      (item: Item) =>
                             <Grid className={classes.mediaCard} item xs={isNarrowWidth ? 6 : 3} >
                                 <ItemCard item={item} hideOrderNumber={hideOrderNumber}/>
                             </Grid>
@@ -55,4 +55,4 @@ export const ItemList: FC<ItemListProps> = ({ title, subTitle, items, hideOrderN
                 }
             </Grid>
         </>)
-} 
+}
