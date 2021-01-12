@@ -1,16 +1,16 @@
-import React from "react";
-import { useTranslation } from "react-i18next";
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 import {
   Container,
   makeStyles,
   createStyles,
   AppBar,
   Tab,
-  Tabs,
-} from "@material-ui/core";
+  Tabs
+} from '@material-ui/core'
 
-import { ItemList } from "./ItemList";
-import { menuItems } from "./helpers/menuItems";
+import { ItemList } from './ItemList'
+import { menuItems } from './helpers/menuItems'
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -18,8 +18,8 @@ interface TabPanelProps {
   value: any;
 }
 
-function TabPanel(props: TabPanelProps) {
-  const { children, value, index, ...other } = props;
+function TabPanel (props: TabPanelProps) {
+  const { children, value, index, ...other } = props
 
   return (
     <div
@@ -31,39 +31,39 @@ function TabPanel(props: TabPanelProps) {
     >
       {value === index && <>{children}</>}
     </div>
-  );
+  )
 }
 
-function a11yProps(index: any) {
+function a11yProps (index: any) {
   return {
     id: `scrollable-auto-tab-${index}`,
-    "aria-controls": `scrollable-auto-tabpanel-${index}`,
-  };
+    'aria-controls': `scrollable-auto-tabpanel-${index}`
+  }
 }
 
 const useStyles = makeStyles(() =>
   createStyles({
     tabs: {
       flexGrow: 1,
-      width: "100%",
+      width: '100%'
     },
     appBar: {
-      width: "100%",
+      width: '100%'
     },
     title: {
-      paddingBottom: "40px",
-    },
+      paddingBottom: '40px'
+    }
   })
-);
+)
 
 export const OrderOnline = () => {
-  const { t } = useTranslation();
-  const classes = useStyles();
-  const [value, setValue] = React.useState(0);
+  const { t } = useTranslation()
+  const classes = useStyles()
+  const [value, setValue] = React.useState(0)
 
   const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-    setValue(newValue);
-  };
+    setValue(newValue)
+  }
 
   return (
     <Container maxWidth="md">
@@ -79,16 +79,16 @@ export const OrderOnline = () => {
             aria-label="scrollable auto tabs example"
           >
             {menuItems.map((menuItem, i) => (
-              <Tab label={t(menuItem.title)} {...a11yProps(i)} />
+              <Tab key={i} label={t(menuItem.title)} {...a11yProps(i)} />
             ))}
           </Tabs>
         </AppBar>
         {menuItems.map((menuItem, i) => (
-          <TabPanel value={value} index={i}>
+          <TabPanel key={i} value={value} index={i}>
             <ItemList title={t(menuItem.title)} items={menuItem.item} />
           </TabPanel>
         ))}
       </div>
     </Container>
-  );
-};
+  )
+}

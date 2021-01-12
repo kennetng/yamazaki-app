@@ -1,12 +1,11 @@
-import React from "react";
-import { NavBar } from "../components/NavBar";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Home } from "../components/Home";
-import { OrderOnline } from "../components/OrderOnline";
-
+import React from 'react'
+import { NavBar } from '../components/NavBar'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { Home } from '../components/Home'
+import { OrderOnline } from '../components/OrderOnline'
 
 export const notFinished = () => {
-    return <h1>notFinished</h1>;
+  return <h1>notFinished</h1>
 }
 
 export const Pages = () => (
@@ -20,4 +19,4 @@ export const Pages = () => (
             <Route path="/contact" component={notFinished} />
         </Switch>
     </Router>
-);
+)

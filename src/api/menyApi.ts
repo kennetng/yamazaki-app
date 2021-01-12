@@ -1,7 +1,7 @@
-import { fetcher } from "./apiHelper";
-import useSWR from "swr";
+import { fetcher } from './apiHelper'
+import useSWR from 'swr'
 
-export const baseUrl = "http://161.35.84.11";
+export const baseUrl = 'http://161.35.84.11'
 
 export interface Item {
   orderNumber: number;
@@ -15,6 +15,6 @@ export interface Item {
   picture: any;
 }
 
-export function useItems() {
-  return useSWR(`${baseUrl}/items`, fetcher);
+export function useItems () {
+  return useSWR(`${baseUrl}/items`, fetcher)
 }
