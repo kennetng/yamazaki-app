@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React from 'react'
 import { Typography, Grid, makeStyles, createStyles, useMediaQuery, Container } from '@material-ui/core'
 
 import { ItemCard } from './ItemCard'
@@ -18,41 +18,41 @@ const useStyles = makeStyles(() =>
 )
 
 interface ItemListProps {
-    title: string;
-    subTitle?: string;
-    items: Item[];
-    hideOrderNumber?: boolean;
+  title: string;
+  subTitle?: string;
+  items: Item[];
+  hideOrderNumber?: boolean;
 }
 
-export const ItemList: FC<ItemListProps> = ({ title, subTitle, items, hideOrderNumber }) => {
+export const ItemList = ({ title, subTitle, items, hideOrderNumber }: ItemListProps) => {
   const classes = useStyles()
   const isNarrowWidth = useMediaQuery('(max-width:700px)')
 
   return (
-        <>
-            <Container className={classes.title}>
-                <Typography variant="h3" component="h2">
-                    {title}
-                </Typography>
-                {subTitle && <Typography variant="h4" component="h3">
-                    {subTitle}
-                </Typography>}
-            </Container>
-            <Grid
-                container
-                spacing={2}
-                direction={isNarrowWidth ? 'column' : 'row'}
-                justify="flex-start"
-                alignItems={isNarrowWidth ? 'center' : 'flex-start'}
-            >
-                {
-                    items.map(
-                      (item: Item) =>
-                            <Grid className={classes.mediaCard} item xs={isNarrowWidth ? 6 : 3} >
-                                <ItemCard item={item} hideOrderNumber={hideOrderNumber}/>
-                            </Grid>
-                    )
-                }
-            </Grid>
-        </>)
+    <>
+      <Container className={classes.title}>
+        <Typography variant="h3" component="h2">
+          {title}
+        </Typography>
+        {subTitle && <Typography variant="h4" component="h3">
+          {subTitle}
+        </Typography>}
+      </Container>
+      <Grid
+        container
+        spacing={2}
+        direction={isNarrowWidth ? 'column' : 'row'}
+        justify="flex-start"
+        alignItems={isNarrowWidth ? 'center' : 'flex-start'}
+      >
+        {
+          items.map(
+            (item: Item) =>
+              <Grid key={item.orderNumber} className={classes.mediaCard} item xs={isNarrowWidth ? 6 : 3} >
+                <ItemCard item={item} hideOrderNumber={hideOrderNumber} />
+              </Grid>
+          )
+        }
+      </Grid>
+    </>)
 }
