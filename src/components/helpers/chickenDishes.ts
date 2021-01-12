@@ -138,22 +138,5 @@ export const chickenDishes: Item[] = [
     },
     allergens: ['f', 's'],
     picture: imrs
-  },
-  {
-    orderNumber: 51,
-    title: {
-      no: 'Kylling og grønnsaker i indisk karri og kokosmelk',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 149,
-      out: 139
-    },
-    allergens: [],
-    picture: 'images/menu/Nr51.jpg'
   }
 ]

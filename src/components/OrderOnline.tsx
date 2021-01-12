@@ -4,13 +4,13 @@ import {
   Container,
   makeStyles,
   createStyles,
-  AppBar,
-  Tab,
-  Tabs
+  Link
 } from '@material-ui/core'
+import { Alert } from '@material-ui/lab'
 
 import { ItemList } from './ItemList'
 import { menuItems } from './helpers/menuItems'
+import { NavigationBar } from './NavigationBar'
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -18,7 +18,7 @@ interface TabPanelProps {
   value: any;
 }
 
-function TabPanel (props: TabPanelProps) {
+const TabPanel = (props: TabPanelProps) => {
   const { children, value, index, ...other } = props
 
   return (
@@ -34,21 +34,14 @@ function TabPanel (props: TabPanelProps) {
   )
 }
 
-function a11yProps (index: any) {
-  return {
-    id: `scrollable-auto-tab-${index}`,
-    'aria-controls': `scrollable-auto-tabpanel-${index}`
-  }
-}
-
 const useStyles = makeStyles(() =>
   createStyles({
     tabs: {
       flexGrow: 1,
       width: '100%'
     },
-    appBar: {
-      width: '100%'
+    bannerBox: {
+      alignItems: 'center'
     },
     title: {
       paddingBottom: '40px'
@@ -61,34 +54,24 @@ export const OrderOnline = () => {
   const classes = useStyles()
   const [value, setValue] = React.useState(0)
 
-  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
-    setValue(newValue)
-  }
-
   return (
-    <Container maxWidth="md">
-      <div className={classes.tabs}>
-        <AppBar className={classes.appBar} position="static" color="default">
-          <Tabs
-            value={value}
-            onChange={handleChange}
-            indicatorColor="primary"
-            textColor="primary"
-            variant="scrollable"
-            scrollButtons="auto"
-            aria-label="scrollable auto tabs example"
-          >
-            {menuItems.map((menuItem, i) => (
-              <Tab key={i} label={t(menuItem.title)} {...a11yProps(i)} />
-            ))}
-          </Tabs>
-        </AppBar>
-        {menuItems.map((menuItem, i) => (
-          <TabPanel key={i} value={value} index={i}>
-            <ItemList title={t(menuItem.title)} items={menuItem.item} />
-          </TabPanel>
-        ))}
-      </div>
-    </Container>
+    <>
+      <Alert severity="info">
+        <p className={classes.bannerBox}>
+          Yamazaki tilbyr nå kun takeaway på spisestedet grunnet covid-19. Er det ønskelig med levering kan dette gjøres gjennom
+        </p>
+        <Link href="https://wolt.com/en/nor/oslo/restaurant/yamazaki-sushi-wok" target="_blank"><img width="100px" src="images/wolt.png"></img></Link>
+      </Alert>
+      <NavigationBar value={value} setValue={setValue} />
+      <Container maxWidth="md">
+        <div className={classes.tabs}>
+          {menuItems.map((menuItem, i) => (
+            <TabPanel key={i} value={value} index={i}>
+              <ItemList title={t(menuItem.title)} items={menuItem.item} />
+            </TabPanel>
+          ))}
+        </div>
+      </Container>
+    </>
   )
 }

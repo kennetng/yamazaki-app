@@ -87,22 +87,5 @@ export const beefDishes: Item[] = [
     },
     allergens: [],
     picture: 'images/menu/Nr41.jpg'
-  },
-  {
-    orderNumber: 42,
-    title: {
-      no: 'Biff med grønnsaker i indisk karri og kokosmelk',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 159,
-      out: 149
-    },
-    allergens: ['hv', 'fs'],
-    picture: 'images/menu/Nr42.jpg'
   }
 ]

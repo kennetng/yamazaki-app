@@ -4,23 +4,6 @@ import imrs from '../../imrs.jpg'
 
 export const futoMaki: Item[] = [
   {
-    orderNumber: 26,
-    title: {
-      no: 'Tempura softshellcrab 6 biter',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: 'Innbakt softshellcrab med kimchi, avocad',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 99,
-      out: 95
-    },
-    allergens: ['sk', 'se', 'hv'],
-    picture: imrs
-  },
-  {
     orderNumber: 27,
     title: {
       no: 'Tempura kingcrab 6 biter',
@@ -52,23 +35,6 @@ export const futoMaki: Item[] = [
       out: 75
     },
     allergens: ['f', 'se'],
-    picture: imrs
-  },
-  {
-    orderNumber: 29,
-    title: {
-      no: 'Futo spesial 8 biter',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: 'Laks, tunfisk, kokt scampi, avocado, tobikorogn, terriyakisaus',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 119,
-      out: 109
-    },
-    allergens: ['f', 'sk', 'b', 'g', 'se'],
     picture: imrs
   },
   {

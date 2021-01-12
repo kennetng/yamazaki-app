@@ -36,12 +36,14 @@ type ItemCardProps = {
 export const ItemCard = ({ item, hideOrderNumber }: ItemCardProps) => {
   const classes = useStyles()
   const language = getLanguage()
+  const { picture, title, orderNumber, description, price } = item
+  const titleWithOrderNumber = `${orderNumber < 100 ? `${orderNumber}.` : ''} ${title[language]}`
 
   return (
     <Card>
       <CardMedia
         className={classes.media}
-        image={item.picture}
+        image={picture}
         title="food"
       />
       <CardContent
@@ -50,10 +52,10 @@ export const ItemCard = ({ item, hideOrderNumber }: ItemCardProps) => {
         {
           hideOrderNumber
             ? <Typography gutterBottom variant="h6" component="h2">
-              {`${item.title[language]}`}
+              {`${title[language]}`}
             </Typography>
             : <Typography gutterBottom variant="h6" component="h2">
-              {`${item.orderNumber}. ${item.title[language]}`}
+              {titleWithOrderNumber}
             </Typography>
         }
       </CardContent>
@@ -61,12 +63,12 @@ export const ItemCard = ({ item, hideOrderNumber }: ItemCardProps) => {
         className={classes.content}
       >
         <Typography variant="body2" color="textSecondary" component="p">
-          {item.description[language]}
+          {description[language]}
         </Typography>
       </CardContent>
       <CardActions>
-        <Chip label={`${item.price.out},-`} />
-        <Chip label={`${item.price.in},-`} />
+        <Chip label={`${price.out},-`} />
+        <Chip label={`${price.in},-`} />
       </CardActions>
     </Card>
   )

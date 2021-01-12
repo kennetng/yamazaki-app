@@ -4,23 +4,6 @@ import imrs from '../../imrs.jpg'
 
 export const starter: Item[] = [
   {
-    orderNumber: 1,
-    title: {
-      no: 'Miso suppe',
-      en: 'Soup'
-    },
-    description: {
-      no: 'Japansk suppe med kamskjell, sjøtang, tofu og sesam',
-      en: 'Very good soup'
-    },
-    price: {
-      in: 55,
-      out: 50
-    },
-    allergens: ['f', 'S'],
-    picture: imrs
-  },
-  {
     orderNumber: 2,
     title: {
       no: 'Fritert Vårrulle 2 stk',
@@ -104,23 +87,6 @@ export const starter: Item[] = [
       out: 75
     },
     allergens: ['m', 'f'],
-    picture: imrs
-  },
-  {
-    orderNumber: 7,
-    title: {
-      no: 'Wonton suppe 5 stk',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: 'Kvernet svinekjøtt og scampi med vårløk og koriander',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 79,
-      out: 75
-    },
-    allergens: ['hv', 'sk', 'e', 'm'],
     picture: imrs
   }
 ]

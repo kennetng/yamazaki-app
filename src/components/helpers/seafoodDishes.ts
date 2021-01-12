@@ -56,24 +56,6 @@ export const seafoodDishes: Item[] = [
     picture: imrs
   },
   {
-    orderNumber: 55,
-    title: {
-      no:
-        'Sjørett med grønnsaker i østersaus (Laks, steinbit, kamskjell, scampi)',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 189,
-      out: 179
-    },
-    allergens: ['sk', 'b', 'f', 'hv'],
-    picture: imrs
-  },
-  {
     orderNumber: 56,
     title: {
       no: 'Grillet and med grønnsaker i hoisinsaus',
@@ -122,40 +104,6 @@ export const seafoodDishes: Item[] = [
       out: 139
     },
     allergens: ['n'],
-    picture: imrs
-  },
-  {
-    orderNumber: 61,
-    title: {
-      no: 'Kylling ingefær',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: 'Kylling med grønnsaker og ingefær',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 139,
-      out: 129
-    },
-    allergens: [],
-    picture: imrs
-  },
-  {
-    orderNumber: 62,
-    title: {
-      no: 'Kylling med karri',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: 'Grønnsaker og ingefær',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 139,
-      out: 129
-    },
-    allergens: [],
     picture: imrs
   },
   {
