@@ -17,7 +17,9 @@ type NavigationBarProps = {
 
 export const NavigationBar = ({ value, setValue }: NavigationBarProps) => {
   const { t } = useTranslation()
-  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => setValue(newValue)
+  const handleChange = (event: React.ChangeEvent<{}>, newValue: number) => {
+    setValue(newValue)
+  }
   return (
     <AppBar
       color="default">
@@ -31,7 +33,7 @@ export const NavigationBar = ({ value, setValue }: NavigationBarProps) => {
         aria-label="scrollable auto tabs example"
       >
         {menuItems.map((menuItem, i) => (
-          <Tab key={i} label={t(menuItem.title)} {...a11yProps(i)} />
+          <Tab href="#menu" key={i} label={t(menuItem.title)} {...a11yProps(i)} />
         ))}
       </Tabs>
     </AppBar>

@@ -18,9 +18,9 @@ const useStyles = makeStyles({
     }
   },
   content: {
-    height: 150,
+    height: 200,
     '@media (max-width:700px)': {
-      height: 100
+      height: 150
     }
   },
   media: {
@@ -36,9 +36,9 @@ type ItemCardProps = {
 export const ItemCard = ({ item, hideOrderNumber }: ItemCardProps) => {
   const classes = useStyles()
   const language = getLanguage()
-  const { picture, title, orderNumber, description, price } = item
+  const { picture, title, orderNumber, description, price, allergens } = item
   const titleWithOrderNumber = `${orderNumber < 100 ? `${orderNumber}.` : ''} ${title[language]}`
-
+  console.log('allergens', allergens)
   return (
     <Card>
       <CardMedia
@@ -64,6 +64,9 @@ export const ItemCard = ({ item, hideOrderNumber }: ItemCardProps) => {
       >
         <Typography variant="body2" color="textSecondary" component="p">
           {description[language]}
+        </Typography>
+        <Typography variant="body1" color="textSecondary" component="p">
+          {`(${allergens.join(' - ')})`}
         </Typography>
       </CardContent>
       <CardActions>

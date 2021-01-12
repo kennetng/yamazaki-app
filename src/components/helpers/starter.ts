@@ -27,14 +27,14 @@ export const starter: Item[] = [
       en: 'Spaghetti'
     },
     description: {
-      no: 'Scampi, kylling og risnudler serveres med chilisaus',
+      no: 'Scampi, kylling og risnudler serveres med hosinsaus',
       en: 'Very good Spaghetti'
     },
     price: {
       in: 69,
       out: 65
     },
-    allergens: ['sk', 'hv'],
+    allergens: ['sk', 'hv', 'p'],
     picture: imrs
   },
   {
@@ -62,7 +62,7 @@ export const starter: Item[] = [
     },
     description: {
       no:
-        'En berømt Thailandsk middels sterk og syrlig scampi suppe med chili, sitron og koriander',
+        'En berømt Thailandsk middels sterk og syrlig scampi suppe med chili, sitron og vårløk',
       en: 'Very good soup'
     },
     price: {
@@ -79,7 +79,7 @@ export const starter: Item[] = [
       en: 'Porridge'
     },
     description: {
-      no: 'Kvernet svinekjøtt med scampi og grønnsaker, serveres med chilisaus',
+      no: 'En berømt Thailandsk middels sterk kylling suppe med kokosmelk, chili, sitron og vårløk',
       en: 'Very good Porridge'
     },
     price: {

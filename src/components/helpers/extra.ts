@@ -40,7 +40,7 @@ export const extra: Item[] = [
   {
     orderNumber: 302,
     title: {
-      no: 'Scampi (2 stk)',
+      no: 'Kokt scampi (2 stk)',
       en: 'Spaghetti'
     },
     description: {
