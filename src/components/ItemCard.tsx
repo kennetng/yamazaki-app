@@ -38,7 +38,6 @@ export const ItemCard = ({ item, hideOrderNumber }: ItemCardProps) => {
   const language = getLanguage()
   const { picture, title, orderNumber, description, price, allergens } = item
   const titleWithOrderNumber = `${orderNumber < 100 ? `${orderNumber}.` : ''} ${title[language]}`
-  console.log('allergens', allergens)
   return (
     <Card>
       <CardMedia
