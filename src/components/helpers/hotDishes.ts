@@ -27,7 +27,7 @@ export const hotDishes: Item[] = [
       en: 'Spaghetti'
     },
     description: {
-      no: 'Scampi, kylling, egg, erter, mais, gullrøtter',
+      no: 'Kylling, egg, erter, mais, gullrøtter',
       en: 'Very good Spaghetti'
     },
     price: {
@@ -44,7 +44,7 @@ export const hotDishes: Item[] = [
       en: 'Spaghetti'
     },
     description: {
-      no: 'Husets stekte eggnudler med grønnsaker, Velg mellom biff/ kylling eller sjømat (scampi, kamskjell, crabstick)',
+      no: 'Husets stekte eggnudler med grønnsaker, Velg mellom biff/kylling eller scampi',
       en: 'Very good Spaghetti'
     },
     price: {

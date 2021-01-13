@@ -10,7 +10,7 @@ export const starter: Item[] = [
       en: 'Porridge'
     },
     description: {
-      no: 'Kvernet svinekjøtt med scampi og grønnsaker, serveres med chilisaus',
+      no: 'Kvernet svinekjøtt med scampi og grønnsaker, serveres med søt chilisaus',
       en: 'Very good Porridge'
     },
     price: {
@@ -44,7 +44,7 @@ export const starter: Item[] = [
       en: 'Fish'
     },
     description: {
-      no: 'Innbakt scampi serveres med chilisaus',
+      no: 'Innbakt scampi serveres med søt chilisaus',
       en: 'Very good fish'
     },
     price: {
