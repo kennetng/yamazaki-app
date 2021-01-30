@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 import { SWRConfig } from 'swr'
 // import { Pages } from "./pages";
-import { fetcher } from "./api/apiHelper";
-import { OrderOnline } from "./components/OrderOnline";
+import { fetcher } from './api/apiHelper'
+import { OrderOnline } from './components/OrderOnline'
 
 export const App = () => (
   <SWRConfig
@@ -13,4 +13,4 @@ export const App = () => (
   >
     <OrderOnline />
   </SWRConfig>
-);
+)

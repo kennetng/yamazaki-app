@@ -1,54 +1,77 @@
-import React from "react"
-import { useTranslation } from "react-i18next";
-import { Container, makeStyles, createStyles } from "@material-ui/core";
+import React from 'react'
+import { useTranslation } from 'react-i18next'
+import {
+  Container,
+  makeStyles,
+  createStyles,
+  Link
+} from '@material-ui/core'
+import { Alert } from '@material-ui/lab'
 
-import { ItemList } from "./ItemList";
-import { nigiri } from "./helpers/nigiri";
-import { sashimiMenu } from "./helpers/sashimiMenu";
-import { starter } from "./helpers/starter";
-import { sushiMenu } from "./helpers/sushiMenu";
-import { sushiOfToday } from "./helpers/sushiOfToday";
-import { maki } from "./helpers/maki";
-import { futoMaki } from "./helpers/futoMaki";
-import { deepFriedMaki } from "./helpers/deepFriedMaki";
-import { hotDishes } from "./helpers/hotDishes";
-import { beefDishes } from "./helpers/beefDishes";
-import { chickenDishes } from "./helpers/chickenDishes";
-import { seafoodDishes } from "./helpers/seafoodDishes";
-import { mineralWater } from "./helpers/mineralWater";
-import { extra } from "./helpers/extra";
+import { ItemList } from './ItemList'
+import { menuItems } from './helpers/menuItems'
+import { NavigationBar } from './NavigationBar'
+
+interface TabPanelProps {
+  children?: React.ReactNode;
+  index: any;
+  value: any;
+}
+
+const TabPanel = (props: TabPanelProps) => {
+  const { children, value, index, ...other } = props
+
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`scrollable-auto-tabpanel-${index}`}
+      aria-labelledby={`scrollable-auto-tab-${index}`}
+      {...other}
+    >
+      {value === index && <>{children}</>}
+    </div>
+  )
+}
 
 const useStyles = makeStyles(() =>
-    createStyles({
-        root: {
-            marginTop: "54px",
-        },
-        title: {
-            paddingBottom: "40px"
-        }
-    }),
-);
+  createStyles({
+    tabs: {
+      flexGrow: 1,
+      width: '100%'
+    },
+    bannerBox: {
+      alignItems: 'center'
+    },
+    title: {
+      paddingBottom: '40px'
+    }
+  })
+)
 
 export const OrderOnline = () => {
-    const { t } = useTranslation();
-    const classes = useStyles();
+  const { t } = useTranslation()
+  const classes = useStyles()
+  const [value, setValue] = React.useState(0)
 
-    return (
-        <Container className={classes.root} maxWidth="md">
-            <ItemList title={t('items.starter.title')} items={starter} />
-            <ItemList title={t('items.sushiOfToday.title')} items={sushiOfToday} />
-            <ItemList title={t('items.sushi.title')} items={sushiMenu} hideOrderNumber={true} />
-            <ItemList title={t('items.sashimi.title')} items={sashimiMenu} hideOrderNumber={true} />
-            <ItemList title={t('items.nigiri.title')} items={nigiri} hideOrderNumber={true} />
-            <ItemList title={t('items.maki.title')} items={maki} />
-            <ItemList title={t('items.futoMaki.title')} items={futoMaki} />
-            <ItemList title={t('items.deepFriedMaki.title')} items={deepFriedMaki} />
-            <ItemList title={t('items.hotDishes.title')} subTitle={t('items.hotDishes.subTitle')} items={hotDishes} />
-            <ItemList title={t('items.beefDishes.title')} subTitle={t('items.beefDishes.subTitle')} items={beefDishes} />
-            <ItemList title={t('items.chickenDishes.title')} subTitle={t('items.chickenDishes.subTitle')} items={chickenDishes} />
-            <ItemList title={t('items.seafoodDishes.title')} items={seafoodDishes} />
-            <ItemList title={t('items.mineralWater.title')} items={mineralWater} hideOrderNumber={true} />
-            <ItemList title={t('items.extra.title')} items={extra} hideOrderNumber={true} />
-        </Container>
-    );
+  return (
+    <>
+      <Alert severity="info">
+        <p className={classes.bannerBox}>
+          Yamazaki tilbyr nå kun takeaway på spisestedet grunnet covid-19. Er det ønskelig med levering kan dette gjøres gjennom
+        </p>
+        <Link href="https://wolt.com/en/nor/oslo/restaurant/yamazaki-sushi-wok" target="_blank"><img width="100px" src="images/wolt.png"></img></Link>
+      </Alert>
+      <NavigationBar value={value} setValue={setValue} />
+      <Container maxWidth="md">
+        <div className={classes.tabs}>
+          {menuItems.map((menuItem, i) => (
+            <TabPanel key={i} value={value} index={i}>
+              <ItemList title={t(menuItem.title)} items={menuItem.item} />
+            </TabPanel>
+          ))}
+        </div>
+      </Container>
+    </>
+  )
 }
