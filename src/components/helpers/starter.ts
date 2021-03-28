@@ -27,7 +27,7 @@ export const starter: Item[] = [
       en: 'Spaghetti'
     },
     description: {
-      no: 'Scampi, kylling og risnudler serveres med hosinsaus',
+      no: 'Scampi, frityrstekt kylling og risnudler serveres med hosinsaus',
       en: 'Very good Spaghetti'
     },
     price: {
