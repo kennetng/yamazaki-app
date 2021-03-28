@@ -43,6 +43,9 @@ const useStyles = makeStyles(() =>
     bannerBox: {
       alignItems: 'center'
     },
+    alertBox: {
+      marginBottom: '50px'
+    },
     title: {
       paddingBottom: '40px'
     }
@@ -56,6 +59,14 @@ export const OrderOnline = () => {
 
   return (
     <>
+      <div className={classes.alertBox}>
+        <Alert severity="info">
+          <p className={classes.bannerBox}>
+            Påskestengt - vi holder stengt den 01.04 t.o.m 04.04 🐣
+        </p>
+        </Alert>
+      </div>
+
       <Alert severity="info">
         <p className={classes.bannerBox}>
           Yamazaki tilbyr nå kun takeaway på spisestedet grunnet covid-19. Er det ønskelig med levering kan dette gjøres gjennom

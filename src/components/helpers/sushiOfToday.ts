@@ -26,7 +26,7 @@ export const sushiOfToday: Item[] = [
     },
     description: {
       no:
-        '4 laks nigiri, 1 tunfisk/kveite nigiri, 1 scampi nigiri, 4 innbakt laks futo maki (avocado, purreløk, kimchi), 4 laks maki',
+        '4 laks nigiri, 1 tunfisk/kveite nigiri, 1 scampi nigiri, 8 laks maki (laks og avokado)',
       en: 'Very good Spaghetti'
     },
     price: {
