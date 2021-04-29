@@ -62,7 +62,7 @@ export const OrderOnline = () => {
       <div className={classes.alertBox}>
         <Alert severity="info">
           <p className={classes.bannerBox}>
-            Påskestengt - vi holder stengt den 01.04 t.o.m 04.04 🐣
+            Yamazaki holder stengt 1 mai og 17 mai. 🇳🇴
         </p>
         </Alert>
       </div>
