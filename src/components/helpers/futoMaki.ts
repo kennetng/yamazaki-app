@@ -4,23 +4,6 @@ import imrs from '../../imrs.jpg'
 
 export const futoMaki: Item[] = [
   {
-    orderNumber: 27,
-    title: {
-      no: 'Tempura kingcrab 6 biter',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: 'Innbakt kingcrab med kimchi, avocado',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 105,
-      out: 95
-    },
-    allergens: ['hv', 'sk', 'se'],
-    picture: imrs
-  },
-  {
     orderNumber: 28,
     title: {
       no: 'Chililaks laks 6 biter',

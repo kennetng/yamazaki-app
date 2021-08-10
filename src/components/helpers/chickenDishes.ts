@@ -21,23 +21,6 @@ export const chickenDishes: Item[] = [
     picture: 'images/menu/Nr43.jpg'
   },
   {
-    orderNumber: 44,
-    title: {
-      no: 'Kylling saté med satésaus og grønnsaker',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 139,
-      out: 129
-    },
-    allergens: [],
-    picture: imrs
-  },
-  {
     orderNumber: 45,
     title: {
       no: 'Kylling og grønnsaker i grønn karri og kokosmelk',

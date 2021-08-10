@@ -21,23 +21,6 @@ export const beefDishes: Item[] = [
     picture: imrs
   },
   {
-    orderNumber: 38,
-    title: {
-      no: 'Biff saté med satésaus og grønnsaker',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 149,
-      out: 139
-    },
-    allergens: [],
-    picture: imrs
-  },
-  {
     orderNumber: 39,
     title: {
       no: 'Szechuan biff med grønnsaker',
@@ -53,39 +36,5 @@ export const beefDishes: Item[] = [
     },
     allergens: [],
     picture: imrs
-  },
-  {
-    orderNumber: 40,
-    title: {
-      no: 'Biff med grønnsaker i peanøtter og kokosmelk',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 159,
-      out: 149
-    },
-    allergens: ['p'],
-    picture: imrs
-  },
-  {
-    orderNumber: 41,
-    title: {
-      no: 'Biff med grønnsaker I rød karri og kokosmelk',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 159,
-      out: 149
-    },
-    allergens: [],
-    picture: 'images/menu/Nr41.jpg'
   }
 ]

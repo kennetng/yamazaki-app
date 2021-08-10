@@ -38,24 +38,6 @@ export const seafoodDishes: Item[] = [
     picture: imrs
   },
   {
-    orderNumber: 54,
-    title: {
-      no:
-        'Sjørett med grønnsaker i en thailandsk, syrlig sterk saus (Laks, kamskjell, scampi)',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 165,
-      out: 159
-    },
-    allergens: ['sk', 'b', 'f', 'hv', 'fs'],
-    picture: imrs
-  },
-  {
     orderNumber: 56,
     title: {
       no: 'Grillet and med grønnsaker i hoisinsaus',
@@ -122,56 +104,5 @@ export const seafoodDishes: Item[] = [
     },
     allergens: [],
     picture: 'images/menu/Nr63.jpg'
-  },
-  {
-    orderNumber: 64,
-    title: {
-      no: 'Biff med brokkoli',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: 'Biff med brokkoli og soyasaus',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 159,
-      out: 149
-    },
-    allergens: [],
-    picture: 'images/menu/Nr64.jpg'
-  },
-  {
-    orderNumber: 65,
-    title: {
-      no: 'Svinekjøtt chopsuey med grønnsaker',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 139,
-      out: 129
-    },
-    allergens: [],
-    picture: imrs
-  },
-  {
-    orderNumber: 66,
-    title: {
-      no: 'Szechuan svine grønnsaker m/szechuansaus',
-      en: 'Spaghetti'
-    },
-    description: {
-      no: '',
-      en: 'Very good Spaghetti'
-    },
-    price: {
-      in: 149,
-      out: 139
-    },
-    allergens: [],
-    picture: imrs
   }
 ]
