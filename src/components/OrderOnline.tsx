@@ -62,7 +62,7 @@ export const OrderOnline = () => {
       <div className={classes.alertBox}>
         <Alert severity="info">
           <p className={classes.bannerBox}>
-            Yamazaki sushi og wok holder stengt fra 15.07.21 t.o.m 02.08.21.
+            Vi holder julestengt og nyttårsstengt den 23.12.21 t.o.m 03.01.22🎄🎇
           </p>
         </Alert>
       </div>
